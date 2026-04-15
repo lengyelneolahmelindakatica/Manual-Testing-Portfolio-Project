@@ -10,7 +10,7 @@ The project includes:
 - Testing performed in an Agile-like workflow (sprints, test cycles)
 
 ## Content
-- `test-cases.md` → Selected test cases (translated to English)
+- `test-case-examples.md` → Selected test cases (translated to English)
 - `bug-reports.md` → Documented bugs found during testing
 - `images/` → Screenshots from the original Jira environment
 
@@ -23,6 +23,14 @@ All materials have been translated and adapted into English for demonstration pu
 - Negative testing
 - UI validation
 - Basic usability issues
+
+## Test Cases
+
+This project includes manually written test case examples based on a real-world testing project.
+
+## Bug Reports
+
+Bug reports are based on real issues identified during testing, originally documented in Jira.
 
 ---
 
