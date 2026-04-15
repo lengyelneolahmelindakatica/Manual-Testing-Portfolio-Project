@@ -1,0 +1,79 @@
+# Test Cases
+
+---
+
+## Test Case 1: Property List Display (Logged-in User)
+
+### Objective
+Verify that a logged-in user can view property details correctly on the property list page.
+
+### Preconditions
+- Application loads successfully (200 OK)
+- User has a valid registered account
+
+### Test Data
+- URL: http://localhost:4200
+- Valid user credentials
+
+### Steps
+1. Open the application
+2. Click on the "Login" button
+3. Enter valid credentials and log in
+4. Navigate to the property list page (e.g. "For Sale")
+
+### Expected Result
+- Property name is displayed
+- Number of rooms is visible
+- Price per room is shown
+- Description and image are displayed correctly
+- Page loads successfully without errors
+
+---
+
+## Test Case 2: Email Verification (Negative Case)
+
+### Objective
+Verify that a user cannot log in without confirming email registration.
+
+### Preconditions
+- Application loads successfully (200 OK)
+
+### Test Data
+- Email: non-existing or unconfirmed email
+- Password: valid password
+
+### Steps
+1. Open the application
+2. Click on the "Register" button
+3. Fill in all required fields with valid data
+4. Complete registration without confirming email
+5. Attempt to log in using the registered credentials
+
+### Expected Result
+- Login attempt fails
+- User is not able to access the system without email confirmation
+
+---
+
+## Test Case 3: Registration with Invalid Password (Too Short)
+
+### Objective
+Verify that registration fails when the password does not meet minimum length requirements.
+
+### Preconditions
+- Application loads successfully (200 OK)
+
+### Test Data
+- Password: less than 8 characters (e.g. !1Aaaaa)
+- Other fields: valid data
+
+### Steps
+1. Open the application
+2. Click on the "Register" button
+3. Fill in all required fields with valid data except password
+4. Enter a password shorter than 8 characters
+5. Click on the "Register" button
+
+### Expected Result
+- Registration fails
+- Error message is displayed indicating password requirements
