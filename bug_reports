@@ -1,0 +1,79 @@
+# Bug Reports
+
+---
+
+## Bug 1: Registration succeeds with mismatched passwords
+
+### Environment
+- OS: Windows 11
+- Browser: Chrome
+
+### Steps to Reproduce
+1. Open the application
+2. Navigate to registration page
+3. Enter valid data
+4. Enter different values in password and confirm password fields
+5. Click Register
+
+### Expected Result
+Registration should fail and display an error message.
+
+### Actual Result
+Registration succeeds even though passwords do not match.
+
+### Severity
+High
+
+### Screenshot
+![Bug 1](images/bug_1.png)
+
+---
+
+## Bug 2: Forgot password function does not send email
+
+### Environment
+- OS: Windows 11
+- Browser: Chrome
+
+### Steps to Reproduce
+1. Open login page
+2. Click "Forgot password"
+3. Enter valid email
+4. Submit request
+
+### Expected Result
+User receives password reset email.
+
+### Actual Result
+No email is sent.
+
+### Severity
+High
+
+### Screenshot
+![Bug 2](images/bug_2.png)
+
+---
+
+## Bug 3: Language switch issue on property list page
+
+### Environment
+- OS: Windows 11
+- Browser: Chrome
+
+### Steps to Reproduce
+1. Open homepage
+2. Switch language to Hungarian
+3. Navigate to property list page
+
+### Expected Result
+All content should be displayed in Hungarian.
+
+### Actual Result
+Some content remains in English.
+
+### Severity
+Low
+
+### Screenshot
+![Bug 3](images/bug_3.png)
